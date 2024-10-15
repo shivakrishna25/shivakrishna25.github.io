@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: white;
+}
+.outer {
+    width: 600px;
+    position: relative;
+    aspect-ratio: 1;
+    outline: 10px solid black;
+    border-radius: 50%;
+    background-color: white;
+    
+}
+li {
+    list-style: none;
+    font-size: 4em;
+    position: absolute;
+}
+li:nth-of-type(12) {
+    left: 50%;
+    transform: translateX(-50%);
+}
+li:nth-of-type(6) {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+li:nth-of-type(3) {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+li:nth-of-type(9) {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+li:nth-of-type(1) {
+    right: 25%;
+    top: 5%;
+}
+li:nth-of-type(2) {
+    right: 8%;
+    top: 20%;
+}
+li:nth-of-type(4) {
+    right: 8%;
+    bottom: 20%;
+}
+li:nth-of-type(5) {
+    right: 25%;
+    bottom: 5%; 
+}
+
+li:nth-of-type(11) {
+    left: 25%;
+    top: 5%;
+}
+li:nth-of-type(10) {
+    left: 8%;
+    top: 20%;
+}
+li:nth-of-type(8) {
+    left: 8%;
+    bottom: 20%;
+}
+li:nth-of-type(7) {
+    left: 25%;
+    bottom: 5%; 
+}
+
+.middle {
+    width: 50px;
+    aspect-ratio: 1;
+    position: absolute;
+    background-color: rgb(20, 20, 17);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 70%;
+    z-index: 3;
+}
+
+.hand {
+    width: 10px;
+    background-color: rgb(6, 20, 5);
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translateX(-50%);
+    border-radius: 100vw 100vw 0 0;
+    transform-origin: bottom;
+}
+.hour {
+    height: 150px;
+    background-color: black
+    z-index: 1;
+}
+.minute {
+    height: 220px;
+}
+.second {
+    width: 5px;
+    height: 240px;
+    z-index: 2;
+    background-color: rgb(204, 11, 46);
+}
+.logo {
+    font-size: 2em;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20%;
+}
